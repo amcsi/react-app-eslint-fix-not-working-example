@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [hey] = useState(3);
+  useEffect(() => {
+      console.info(hey);
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
